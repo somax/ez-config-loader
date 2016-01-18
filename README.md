@@ -8,9 +8,11 @@ Ez Config Loader
 
 
 ## 引用
-`npm install ez-config-loader --save`
+`$ npm install ez-config-loader --save`
 
-`var configLoader = require('../index.js');`
+```js
+var configLoader = require('ez-config-loader');
+```
 
 ## 用法
 ### 无环境变量
@@ -19,7 +21,7 @@ var config = configLoader('path2config/config')); // 加载 ./path2config/testCo
 ```
 
 ### 有环境变量
-`exports NODE_ENV=development`
+`$ exports NODE_ENV=development`
 
 ```js
 var config = configLoader('path2config/config')); // 加载 ./path2config/testConfig.development.json
