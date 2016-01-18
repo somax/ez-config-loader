@@ -1,6 +1,6 @@
 {
   "name": "ez-config-loader",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "根据环境变量 `NODE_ENV` 加载 JSON 格式的 Config 文件",
   "main": "index.js",
   "scripts": {
