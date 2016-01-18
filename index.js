@@ -5,8 +5,11 @@
  * 支持根据环境变量 `NODE_ENV` 加载不同的配置文件，
  * 用于方便开发环境与生产环境调用不同的资源
  */
+var path = require('path');
+
 function ConfigLoader(path2config) {
-    path2config = path2config.replace(/.json$/, '');
+
+    path2config = path.resolve(path2config).replace(/.json$/, '');
 
     // 根据环境变量加载不同配置文件
     var NODE_ENV = process.env.NODE_ENV;

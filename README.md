@@ -15,14 +15,14 @@ Ez Config Loader
 ## 用法
 ### 无环境变量
 ```js
-var config = configLoader(__dirname + '/testConfig')); // 加载 testConfig.json
+var config = configLoader('path2config/config')); // 加载 ./path2config/testConfig.json
 ```
 
 ### 有环境变量
 `exports NODE_ENV=development`
 
 ```js
-var config = configLoader(__dirname + '/testConfig')); // 加载 testConfig.development.json
+var config = configLoader('path2config/config')); // 加载 ./path2config/testConfig.development.json
 ```
 
 ## test
